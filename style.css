@@ -1,0 +1,98 @@
+.fullArea{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.blockSlider{
+    display: flex;
+    max-width: 758px;
+    width: 100%;
+    height: 388px;
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+.pointsAreaSize{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+}
+.point{
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background: rgb(229, 229, 229);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.point:hover{
+    background: rgb(160, 31, 31);
+}
+.imgesArea{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgeSlider{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    animation-name: Animation;
+    animation-duration: 1s;
+}
+.activeImge{
+    background: rgb(9, 20, 138);
+    display: flex;
+    border-radius: 20px;
+}
+.btnAreaSize{
+    position: absolute;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+i.fa.fa-angle-left, i.fa.fa-angle-right{
+    color: rgb(115, 126, 250);
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.blockArrow{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 1px solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.blockArrow:hover{
+    background: rgba(39, 39, 39, 0.59);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.blockArrow:active{
+    background: rgba(16, 16, 16, 0.59);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+@-webkit-keyframes Animation {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes Animation {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
